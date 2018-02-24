@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/pier_landscape.jpeg);
+    background-size: 100%;
+    background-position: 0 60%;
+}
+.coverTitle {
+    color: white;
+    font-family: 'Tangerine', cursive;
+    width: 80%;
+}
