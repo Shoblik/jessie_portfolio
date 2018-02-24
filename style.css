@@ -10,11 +10,17 @@
     background-size: 100%;
     background-position: 0 60%;
 }
-.leftColumn {
+.leftColumn, .rightColumn {
     position: relative;
     height: 100%;
-    width: 48%;
+    width: 48.4%;
     background-color: rgba(0,0,0, .2);
+    display: inline-block;
+    vertical-align: top;
+}
+.rightColumn {
+    width: 51%;
+    background-color: transparent;
 }
 .coverTitle {
     color: black;
@@ -25,4 +31,104 @@
     font-weight: 100;
     position: relative;
     top: 5%;
+}
+.traitsContainer {
+    position: relative;
+    top: 10%;
+}
+.trait {
+    font-family: 'Krona One', sans-serif;
+    color: black;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+}
+.socialCircle {
+    position: relative;
+    height: 52%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, .2);
+    border: 2px solid black;
+    top: 30%;
+    margin: auto;
+    transition: .5s;
+}
+.socialTitle {
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    position: relative;
+    top: 11%;
+    font-size: 2.9rem;
+    /* text-decoration: underline; */
+}
+.socialCircle:hover {
+    background-color: rgba(255,255,255, .6);
+}
+
+.socialCircle:hover .mediaBtnContainer {
+    border-top: 2px solid black;
+}
+.mediaBtnContainer {
+    width: 85%;
+    height: 60%;
+    /* background-color: lavender; */
+    top: 12%;
+    position: relative;
+    border-top: 2px solid transparent;
+    margin: auto;
+    text-align: center;
+    /* border-top: 2px solid black; */
+}
+.facebookBtn, .instagramBtn, .linkedIn, .mailBtn {
+    background-image: url(./images/003-facebook.png);
+    background-size: cover;
+    height: 27%;
+    width: 18%;
+    background-color: white;
+    border-radius: 15%;
+    display: inline-block;
+    /* margin-top: 10px; */
+    margin: 10px 15px;
+}
+.facebookBtn:hover, .instagramBtn:hover, .linkedIn:hover, .mailBtn:hover {
+    cursor: pointer;
+}
+.instagramBtn {
+    background-image: url(./images/002-instagram.png);
+    border-radius: 32%;
+}
+.linkedIn {
+    background-image: url('./images/004-linkedin.png');
+}
+.mailBtn {
+    background-image: url(./images/gmail.png);
+    background-color: transparent;
+}
+
+ul.menu {
+    text-align: center;
+    position: relative;
+    top: 6%;
+    width: 80%;
+    /* padding: 0 45px; */
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.menu li {
+    font-family: Tangerine;
+    font-size: 2.2rem;
+    /* margin-top: 25px; */
+    position: relative;
+    top: 10%;
+    margin: 0 3%;
+    display: inline-block;
+}
+.menu li:hover {
+    /* font-size: 2.3rem; */
+    /* bottom: 1%; */
+    color: white;
+}
+li:hover {
+    cursor: pointer;
 }
