@@ -27,7 +27,7 @@
     font-family: 'Tangerine', cursive;
     text-align: center;
     display: block;
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: 100;
     position: relative;
     top: 5%;
@@ -35,13 +35,21 @@
 .traitsContainer {
     position: relative;
     top: 10%;
+    overflow: hidden;
 }
 .trait {
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Spectral SC', serif;
+    /*font-family: 'Playfair Display SC', serif;*/
     color: black;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 100;
     text-align: center;
+    transform: translateY(100%);
+    transition: 2s linear;
+    transition-timing-function: cubic-bezier(0.1, 1.0, 1.0, 0.1);
+}
+.scrollTrait {
+    transform: translateY(-100%);
 }
 .socialCircle {
     position: relative;
@@ -78,6 +86,7 @@
     border-top: 2px solid transparent;
     margin: auto;
     text-align: center;
+    transition: .5s;
     /* border-top: 2px solid black; */
 }
 .facebookBtn, .instagramBtn, .linkedIn, .mailBtn {
@@ -131,4 +140,81 @@ ul.menu {
 }
 li:hover {
     cursor: pointer;
+}
+.about:hover .demoContainer {
+    opacity: 1;
+}
+.demoContainer {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    background-color: rgba(255,255,255, .6);
+    border-radius: 20px;
+    position: relative;
+    top: 10%;
+    opacity: 0;
+    transition: .5s;
+}
+.coverContactTitle {
+    text-align: center;
+    font-family: Tangerine;
+    font-size: 3.5rem;
+    position: relative;
+    top: 10%;
+}
+a {
+    color: initial;
+}
+/****************Projects***********************/
+.projectsBackground {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightblue;
+}
+body {
+    height: 600vh;
+    overflow-x: hidden;
+}
+.header {
+    width: 100%;
+    background-color: rgba(255,255,255, .7);
+    border-bottom: 1px solid black;
+    position: fixed;
+}
+.header .menu {
+    top: 100%;
+    position: relative;
+    width: 63%;
+    text-align: right;
+    padding-top: 25px;
+    left: 20%;
+    display: inline-block;
+    border-bottom: none;
+    vertical-align: bottom;
+}
+h2.menuTitle {
+    display: inline-block;
+    font-family: Tangerine;
+    font-weight: 100;
+    font-size: 4REM;
+    left: 6%;
+    position: relative;
+}
+.hamburgerMenu {
+    position: absolute;
+    left: 95%;
+    transform: translateX(-100%);
+    /* right: -5%; */
+    height: 55px;
+    top: 1%;
+    position: fixed;
+    display: none;
+    background-image: url(./images/menu.png);
+    width: 55px;
+    background-size: cover;
+}
+.hamburgerMenu:hover {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
 }
