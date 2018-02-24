@@ -3,14 +3,26 @@
     padding: 0;
 }
 .background {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(./images/pier_landscape.jpeg);
     background-size: 100%;
     background-position: 0 60%;
 }
+.leftColumn {
+    position: relative;
+    height: 100%;
+    width: 48%;
+    background-color: rgba(0,0,0, .2);
+}
 .coverTitle {
-    color: white;
+    color: black;
     font-family: 'Tangerine', cursive;
-    width: 80%;
+    text-align: center;
+    display: block;
+    font-size: 6rem;
+    font-weight: 100;
+    position: relative;
+    top: 5%;
 }
