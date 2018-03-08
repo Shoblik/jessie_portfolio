@@ -21,8 +21,10 @@ ul.menuDropDown {
 }
 .menuDropDown li {
     height: 10vh;
-    /* width: 50px; */
     position: relative;
+    border-bottom: 1px solid white;
+    width: 80%;
+    margin: auto;
 }
 span.centerMenuItems {
     position: relative;
