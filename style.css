@@ -2,6 +2,36 @@
     margin: 0;
     padding: 0;
 }
+ul.menuDropDown {
+    display: inline-block;
+    width: 20%;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0,0,0, .7);
+    z-index: 1000;
+    left: 100%;
+    list-style-type: none;
+    transition: .4s;
+    position: fixed;
+    top: 10%;
+    border-radius: 30px;
+}
+.showDropDown {
+    transform: translateX(-100%);
+}
+.menuDropDown li {
+    height: 10vh;
+    /* width: 50px; */
+    position: relative;
+}
+span.centerMenuItems {
+    position: relative;
+    transform: translateY(-50%);
+    top: 30%;
+    color: white;
+    font-family: Tangerine;
+    font-size: 2rem;
+}
 .background {
     position: relative;
     width: 100vw;
@@ -172,7 +202,6 @@ a {
     background-color: lightblue;
 }
 body {
-    height: 600vh;
     overflow-x: hidden;
 }
 .header {
@@ -187,10 +216,11 @@ body {
     width: 63%;
     text-align: right;
     padding-top: 25px;
-    left: 20%;
+    left: 41%;
     display: inline-block;
     border-bottom: none;
     vertical-align: bottom;
+    transform: translateX(-62%);
 }
 h2.menuTitle {
     display: inline-block;
@@ -212,9 +242,101 @@ h2.menuTitle {
     background-image: url(./images/menu.png);
     width: 55px;
     background-size: cover;
+    z-index: 100;
 }
 .hamburgerMenu:hover {
     cursor: pointer;
     height: 60px;
     width: 60px;
+}
+h1.projectsTitle {
+    position: relative;
+    display: inline-block;
+    left: 13%;
+    top: 2%;
+    font-family: Spectral SC;
+}
+h2.menuTitle {
+    display: inline-block;
+    font-family: Tangerine;
+    font-weight: 100;
+    font-size: 2.3REM;
+    left: 4%;
+    position: relative;
+}
+.projectRightColumn, .projectLeftColumn {
+    width: 48%;
+    display: inline-block;
+    height: 80%;
+     /*background-color: rgba(0,0,0, .2);*/
+    top: 15%;
+    position: relative;
+    vertical-align: top;
+}
+.projectLeftColumn {
+    width: 41%;
+}
+.roomDemo {
+    /*background-image: url('./images/CB_1804_Cover copy.jpg');*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 91%;
+    height: 53%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+.inspiringSauce {
+    background-image: url('./images/CB_1804_Cover copy.jpg');
+}
+.kitchenBath {
+    background-image: url('./images/farmhouse_cover.jpg');
+}
+.largerDemo {
+    /*background-image: url(./images/cb_farmhouse_cover.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 88%;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+.kimLegget {
+    background-image: url(./images/cb_farmhouse_cover.png);
+}
+.projectContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+h4.demoTitle {
+    font-family: Spectral SC;
+    font-size: 1.3rem;
+}
+h5.demoSubtitle {
+    font-size: 1.05rem;
+    font-family: Spectral SC;
+}
+h6.demoDescription {
+    font-size: .8rem;
+    margin: 10px 0 10px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    text-align: left;
+    font-family: 'Spectral', serif;
+
+}
+.innerRight, .innerLeft {
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+    vertical-align: top;
+}
+.innerLeft {
+    height: auto;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
 }

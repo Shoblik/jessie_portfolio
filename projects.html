@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Projects</title>
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
     <link rel='stylesheet' href='./style.css'>
     <script rel="script" src="main.js"></script>
 </head>
@@ -11,6 +13,7 @@
     <div class="projectsBackground">
         <header class="header">
             <h2 class="menuTitle">Jessie Yount</h2>
+            <h1 class="projectsTitle">Writing Portfolio</h1>
             <ul class="menu">
                 <li class="home">Home</li>
                 <li class="about">About</li>
@@ -19,7 +22,46 @@
                 <li class="contact">Contact</li>
             </ul>
         </header>
-        <div class="hamburgerMenu"></div>
+        <div class="hamburgerMenu" onclick="document.querySelector('.menuDropDown').classList.toggle('showDropDown');"></div>
+        <ul class="menuDropDown">
+            <li class="homeDropDown"><span class="centerMenuItems">Home</span></li>
+            <li class="aboutDropDown"><span class="centerMenuItems">About</span></li>
+            <li class="projectsDropDown"><span class="centerMenuItems">Projects</span></li>
+            <li class="resumeDropDown"><span class="centerMenuItems">Resume</span></li>
+            <li class="contactDropDown"><span class="centerMenuItems">Contact</span></li>
+        </ul>
+
+        <div class="projectContainer">
+            <div class="projectLeftColumn">
+                <div class="innerLeft">
+                    <h4 class="demoTitle">Cottages & Bungalows</h4>
+                    <h5 class="demoSubtitle">March/April 2018</h5>
+                    <h6 class="demoDescription">A book review of Kim Leggett's Farmhouse Style. Exploring the ins and outs of relaxed living and homey decor.</h6>
+                </div>
+                <div class="innerRight">
+                    <div class="roomDemo inspiringSauce"></div>
+                </div>
+            </div>
+            <div class="projectRightColumn">
+                <div class="largerDemo kimLegget"></div>
+            </div>
+        </div>
+
+        <div class="projectContainer">
+            <div class="projectLeftColumn">
+                <div class="innerLeft">
+                    <h4 class="demoTitle">American Farmhouse Style</h4>
+                    <h5 class="demoSubtitle">March/April 2018</h5>
+                    <h6 class="demoDescription">A book review of Kim Leggett's Farmhouse Style. Exploring the ins and outs of relaxed living and homey decor.</h6>
+                </div>
+                <div class="innerRight">
+                    <div class="roomDemo kitchenBath"></div>
+                </div>
+            </div>
+            <div class="projectRightColumn">
+                <div class="largerDemo"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

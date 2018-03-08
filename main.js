@@ -1,6 +1,5 @@
 let index = 0;
 const documentReady = () => {
-    console.log("I'm Fucking Ready");
     cycleJessieTraits(true);
     document.querySelector('.about').addEventListener('mouseover', () => {
         let title = document.createElement('h3');
